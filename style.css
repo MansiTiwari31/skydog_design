@@ -1,0 +1,663 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   }
+html,body{
+  width: 100vw;
+  min-height:100vh ;
+  background-color: rgb(0, 0, 0);
+}
+@font-face {
+    font-family: "northdenregular";
+    src: url("./assets/Fonts/northdenrough-free-webfont.woff") format("woff2"),
+      url("northden-free-webfont.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: "northden";
+    src: url("./assets/Fonts/northden-free-webfont.woff2") format("woff2"),
+      url("./assets/Fonts/northdenrough-free-webfont.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: Gotham;
+    src: url(./assets/Fonts/GothamBook.ttf);
+    /* font-weight: bold; */
+  }
+  .background {
+    width: 100%;
+    height: 100vh;
+  }
+  
+  video {
+    object-fit: cover;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+  }
+#hero{
+    width: 100%;
+   min-height:100vh ;
+    /* background-color: rgb(0, 0, 0); */
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    height: 90px;
+    width: 100%;
+     /* background-color: red;  */
+     padding: 3vw;
+     z-index: 999;
+     position: relative;
+}
+nav #img{
+    height: 7vh;
+    width: 13vh;
+    margin-left: 3vw;
+}
+nav button{
+    height: 4vh;
+    width: 9.5vh;
+    border-radius: 2px;
+    margin-left: 135vh;
+    background-color: transparent;
+    border: 1px solid #aaa;
+    color: #aaa;
+    margin-top: 0.5vw;
+}
+nav button:hover{
+    cursor: pointer;
+    background-color: #aaa;
+color: black;
+transition: all cubic-bezier(0.19, 1, 0.22, 1) 0.5s;
+}
+nav #img1:hover{
+    cursor: pointer;
+    height: 3.5vh;
+    width: 3.5vh;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1) 0.5s;
+}
+nav #img1{
+    height: 4.2vh;
+    width: 4.2vh;
+    border: 1px solid #aaa;
+    color: #aaa;
+    padding: 5px;
+    border-radius: 50%;
+    margin-right: 5vw;
+    margin-top: 0.5vw;
+}
+
+#dis{
+    position: relative;
+    top: 45vh;
+    left: 7.5vw;
+     height: 38vh;
+    width: 85vw;
+    color: white;
+   /* background-color: red;  */
+}
+ #title h1{
+    z-index: 999999999;
+    position: absolute;
+    color: #aaa;
+  font-family: northdenregular;
+  font-size: 8.5vw;
+   font-weight: 400; 
+   text-align: center;
+   opacity: 0;
+} 
+#detail{
+    position: absolute;
+    text-align: center;
+    width: 85vw;
+    
+}
+#detail p{
+    position: absolute;
+    top: 10vw;
+    z-index: 999999999;
+    color: #aaa;
+    font-size: 1vw;
+    padding: 0.2vw;
+    padding-bottom: 1.3vw;
+    text-align: center;
+    font-family: Gotham;
+    opacity: 0;
+}
+#detail #d1{
+    position: relative;
+    z-index: 999999999;
+  width: 11vw;
+  height: 3.5vw;
+  left: 50%;
+  border: 3px solid #f5f3f3;
+  transform: translate(-50%, -50%);
+  top: 18vw;
+  opacity: 0;
+}
+#detail button{
+    position: absolute;
+    right: 6px;
+  top: 4vw;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  font-family: Gotham;
+  font-weight: 600;
+
+}
+#detail button:hover{
+    background-color: white;
+    cursor: pointer;
+    right: 0px;
+  top: 0px;
+  transition: all cubic-bezier(0.19, 1, 0.22, 1) 0.5s;
+}
+#about {
+    position: relative;
+    width: 100%;
+  
+    padding: 0vw 0vw 0vw 8vw;
+  }
+#mainbox {
+    position: relative;
+    display: flex;
+  
+    padding: 100px 0;
+    width: 100%;
+    gap: 20px;
+  }
+#sec_1 {
+    position: relative;
+  
+    width: 530px;
+    height: 530px;
+    border: 2px solid #aaaaaa;
+  }
+  .gif_images {
+    right: 10px;
+    top: -10px;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+  }
+#sec_2 {
+    width: 50%;
+  }
+  
+#que {
+    color: #aaa;
+    font-family: northdenregular;
+    font-size: 94px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+#p1 {
+    color: #aaa;
+    font-family: Gotham;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px; /* 150% */
+  }
+  
+  #mainbox #d1{
+    position: relative;
+  width: 11vw;
+  height: 3.5vw;
+  border: 3px solid #aaaaaa;
+ 
+}
+
+#d1 button{
+    right: 6px;
+  top: -6px;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  font-family: Gotham;
+  font-weight: 600;
+
+}
+#d1 button:hover{
+    background-color: white;
+    cursor: pointer;
+    right: 0px;
+  top: 0px;
+  transition: all cubic-bezier(0.19, 1, 0.22, 1) 0.5s;
+}
+#cards{
+    /* width: 80vw;
+    height: 100vh; */
+    color: white;
+    /* background-color: red; */
+}
+
+#cards, #cards2{
+    z-index: 999999999;
+    
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+#card, #card2{
+   position: relative;
+    width: 20vw;
+    height: 26vw;
+    border: solid 2px rgb(230, 216, 216);
+    margin: 15px;
+    padding: 10px;
+    display:flex;
+}
+#card h3, #card2 h3{
+    color: white;
+    font-family: gotham;
+    font-weight: 300;
+    font-size: 1vw;
+    /* margin-top: 2vh; */
+    padding: 2vh;
+}
+#card img, #card2 img{
+    height: 6vh;
+    width: 6vh;
+
+}
+#card button, #card2 button{
+    height: 3.5vh;
+    width: 3.2vw;
+    background-color: rgba(49, 48, 48, 0.768);
+    color: white;
+    margin-top: 1.4vh;
+    margin-left: 8.5vh;
+}
+ 
+#card #img2, #card2 #img2{
+    margin-top: 7vh;
+    width: 18.5vw;
+    height: 18vw;
+    margin-left: -18.3vw;
+}
+#card h2, #card2 h2, #card h4, #card2 h4 {
+    position: absolute;
+    margin-top: 43.5vh;
+    margin-left: 0.2vh;
+    font-family: Gotham;
+    font-size: 1vw;
+    color: white;
+}
+#card h4, #card2 h4{
+    margin-top: 46.3vh;
+    font-weight: 300;
+    font-size: 0.9vw;
+}
+.heading_1 {
+    color: #aaa;
+    font-family: northdenregular;
+    font-size: 94px;
+    font-style: normal;
+    font-weight: 400;
+    line-height:80px;
+    padding-bottom: 3vh;
+  }
+  .common_para1 {
+    color: #aaa;
+    font-family: Gotham;
+    margin-bottom: 10vw;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 25px; /* 150% */
+  }
+  
+  .span-text {
+    color: #000;
+    font-family: Gotham;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+  .viewport_header1 {
+    position: relative;
+    padding: 0vw 5vw 0vw 4vw;
+    /* background-color: red; */
+    margin-top: -8vh;
+  }
+  .main_box1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0vw 5vw 0vw 4vw;
+    width: 100%;
+  }
+  .banner_images {
+    width: 600px;
+  }
+
+  .main_box1 #d2{
+    position: relative;
+  width: 10vw;
+  height: 3.5vw;
+  border: 3px solid #aaaaaa;
+   top: -7vw;
+   left: 0.5vw;
+}
+#d2 button{
+    right: 4px;
+  top: -9px;
+  position: absolute;
+  width: 10vw;
+  height: 3.5vw;
+  font-family: Gotham;
+  font-weight: 600;
+
+}
+#d2 button:hover{
+    background-color: white;
+    cursor: pointer;
+    right: -2px;
+  top: -0.8px;
+  transition: all cubic-bezier(0.19, 1, 0.22, 1) 0.5s;
+}
+.fifth_section {
+    padding: 12vw 0;
+    text-align: center;
+    color: #fff;
+  }
+  .common_para5 {
+    color: #fff;
+    font-family: Gotham;
+    padding: 12px 0;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+  .mysterybox_images {
+    padding-top: 40px;
+    width: 615px;
+    /* transform: scaleY(-1); */
+    /* animation: rotation 9s infinite linear; */
+    /* transform: rotate3d(0, 1, 0, 60deg); */
+    animation: animate 15s linear infinite;
+  }
+   /* @keyframes rotation{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+  }  */
+  
+
+  .nft_images {
+    width: 260px;
+    height: 260px;
+  }
+  .inner_padding {
+    padding: 10px 0;
+  }
+  .common_padding {
+    padding-top: 10px;
+  }
+  .common_para4 {
+    color: #fff;
+    font-family: Gotham;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+  .main_box1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 200px 0 100px;
+    width: 100%;
+  }
+  
+  .banner_images {
+    width: 700px;
+  }
+  .fouth_section {
+    width: 100%;
+  
+    padding: 0px 0;
+  }
+  
+  .fouth_section::-webkit-scrollbar {
+    overflow-x: hidden;
+  }
+  
+  .heading_5 {
+    color: #aaa;
+    font-family: northdenregular;
+    font-size: 90px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 85px;
+  }
+  .heading_6 {
+    font-family: northden;
+    font-size: 90px;
+    font-style: normal;
+    font-weight: 400;
+    color: #000;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #ffffff;
+    background-color: transparent;
+  
+    line-height: 95px;
+  }
+  .star_images {
+    width: 48px;
+  }
+
+  .six_section {
+    padding: 0px 0;
+  }
+  .six_box {
+    display: flex;
+    padding: 15px;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 20px;
+    border: 2px solid #aaa;
+  }
+  .common_para6 {
+    color: #fff;
+  
+    padding: 20px 0;
+    font-family: Gotham;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px; /* 120% */
+  }
+  .input_box {
+    width: 540px;
+    height: 60px;
+    border-radius: 8px;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #aaa;
+  }
+  .common_para7 {
+    color: #aaa;
+    font-family: Gotham;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  
+    padding: 7px 0;
+  }
+  .input_box1 {
+    width: 540px;
+    height: 60px;
+  
+    padding: 0px;
+    border-radius: 8px;
+    background: #fff;
+  }
+  .common_para8 {
+    color: #000;
+    text-align: center;
+    font-family: Gotham;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    padding: 17px 0;
+  }
+  
+  .footer_section {
+    text-align: center;
+    padding: 100px 40px 100px 40px;
+  }
+  .footer_logo {
+    width: 150px;
+  }
+  .common_para9 {
+    color: #fff;
+    width: 100%;
+    justify-content: center;
+    display: flex;
+    text-align: center;
+    font-family: Gotham;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px; /* 125% */
+    padding: 5px 0;
+  }
+  .socials_link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    text-align: center;
+    padding: 15px 0;
+  }
+  .fb_images {
+    width: 22px;
+  }
+  .footer-border {
+    border-top: 1px solid rgba(170, 170, 170, 0.3);
+  }
+  
+  .viewport_footer {
+    position: relative;
+    width: 100%;
+  }
+  .inner_footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+  }
+  .inner-list {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+  }
+  .inner_list-content {
+    color: #fff;
+    font-family: Gotham;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px; /* 142.857% */
+    list-style: none;
+  }
+  
+  /*--------*/
+  .cta {
+    background: #fff;
+  
+    
+    text-decoration: none;
+  
+    transition: 1s;
+  }
+  
+  .cta:focus {
+    outline: none;
+  }
+  
+  .cta:hover {
+    transition: 0.5s;
+    box-shadow: 10px 10px 0 #fff;
+  }
+  
+  .cta span:nth-child(2) {
+    transition: 0.5s;
+    margin-right: 0px;
+  }
+  
+  .cta:hover span:nth-child(2) {
+    transition: 0.5s;
+    margin-right: 45px;
+  }
+  
+  span {
+    transform: skewX(15deg);
+  }
+  
+  span:nth-child(2) {
+    width: 20px;
+    margin-left: 30px;
+    position: relative;
+    top: 12%;
+  }
+  
+  /**************SVG****************/
+  
+  path.one {
+    transition: 0.4s;
+    transform: translateX(-60%);
+  }
+  
+  path.two {
+    transition: 0.5s;
+    transform: translateX(-30%);
+  }
+  
+  .cta:hover path.three {
+    animation: color_anim 1s infinite 0.2s;
+  }
+  
+  .cta:hover path.one {
+    transform: translateX(0%);
+    animation: color_anim 1s infinite 0.6s;
+  }
+  
+  .cta:hover path.two {
+    transform: translateX(0%);
+    animation: color_anim 1s infinite 0.4s;
+  }
+  ::-webkit-scrollbar {
+    display: none;
+    }
+ #show1{
+
+    bottom: 21vw;
+    height: 29vw;
+    position: absolute;
+    left: 11%;
+    translate: transform(-50%,-50%);
+ }
+ 
